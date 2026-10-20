@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Codes\\C-Plus-Plus\\10_20_2026_TheJourneyBegins\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9016A024-3D56-40A9-8604-45FABB12AAAD}|10_20_2026_TheJourneyBegins\\10_20_2026_TheJourneyBegins.vcxproj|C:\\Codes\\C-Plus-Plus\\10_20_2026_TheJourneyBegins\\10_20_2026_TheJourneyBegins\\Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9016A024-3D56-40A9-8604-45FABB12AAAD}|10_20_2026_TheJourneyBegins\\10_20_2026_TheJourneyBegins.vcxproj|solutionrelative:10_20_2026_TheJourneyBegins\\Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test.cpp",
+              "DocumentMoniker": "C:\\Codes\\C-Plus-Plus\\10_20_2026_TheJourneyBegins\\10_20_2026_TheJourneyBegins\\Test.cpp",
+              "RelativeDocumentMoniker": "10_20_2026_TheJourneyBegins\\Test.cpp",
+              "ToolTip": "C:\\Codes\\C-Plus-Plus\\10_20_2026_TheJourneyBegins\\10_20_2026_TheJourneyBegins\\Test.cpp",
+              "RelativeToolTip": "10_20_2026_TheJourneyBegins\\Test.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-10-20T15:27:31.362Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
