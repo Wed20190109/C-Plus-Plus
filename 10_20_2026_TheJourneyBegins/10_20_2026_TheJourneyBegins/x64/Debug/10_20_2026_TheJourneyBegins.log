@@ -1,3 +1,6 @@
 ﻿  Test.cpp
 C:\Codes\C-Plus-Plus\10_20_2026_TheJourneyBegins\10_20_2026_TheJourneyBegins\Test.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  10_20_2026_TheJourneyBegins.vcxproj -> C:\Codes\C-Plus-Plus\10_20_2026_TheJourneyBegins\x64\Debug\10_20_2026_TheJourneyBegins.exe
+C:\Codes\C-Plus-Plus\10_20_2026_TheJourneyBegins\10_20_2026_TheJourneyBegins\Test.cpp(66,10): error C2440: “初始化”: 无法从“const int”转换为“int &”
+      C:\Codes\C-Plus-Plus\10_20_2026_TheJourneyBegins\10_20_2026_TheJourneyBegins\Test.cpp(66,10):
+      转换丢失限定符
+  
