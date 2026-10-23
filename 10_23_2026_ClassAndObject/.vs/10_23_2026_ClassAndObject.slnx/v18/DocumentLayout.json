@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58628D9B-14C1-4349-AD8F-630FBF278637}|10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject.vcxproj|C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Notes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58628D9B-14C1-4349-AD8F-630FBF278637}|10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject.vcxproj|solutionrelative:10_23_2026_ClassAndObject\\Notes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Notes.cpp",
+              "DocumentMoniker": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Notes.cpp",
+              "RelativeDocumentMoniker": "10_23_2026_ClassAndObject\\Notes.cpp",
+              "ToolTip": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Notes.cpp",
+              "RelativeToolTip": "10_23_2026_ClassAndObject\\Notes.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-10-23T07:57:13.151Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
