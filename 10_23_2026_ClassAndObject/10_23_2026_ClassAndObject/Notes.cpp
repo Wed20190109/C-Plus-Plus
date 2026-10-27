@@ -42,28 +42,105 @@ int main1()
 /*
 隐含指针this
 */
+/*
+
+Date类中有Init与Print两个成员函数，函数体中没有关于不同对象的区分，那当d1调⽤Init和
+Print函数时，该函数是如何知道应该访问的是d1对象还是d2对象呢？那么这⾥就要看到C++给了
+⼀个隐含的this指针解决这⾥的问题
+
+编译器编译后，类的成员函数默认都会在形参第⼀个位置，增加⼀个当前类类型的指针，叫做this
+指针。⽐如Date类的Init的真实原型为，
+void Init(Date* const this, int year,
+int month, int day)
+
+类的成员函数中访问成员变量，本质都是通过this指针访问的，如Init函数中给_year赋值，
+>_year = year;
+this
+
+C++规定不能在实参和形参的位置显⽰的写this指针(编译时编译器会处理)，但是可以在函数体内显
+⽰使⽤this指针。
+
+*/
 class Date1
 {
 
 public:
-	Date1(int year,int month, int day)
+	// void Init(Date* const this, int year, int month, int day)
+	void Init(int year=2,int month=4, int day=4)
 	{
-		_year = year;
-		_month = month;
-		_day = day;
+		// 		编译报错：			
+		// error C2106 : “ = ” :左操作数必须为左值
+
+			// this = nullptr;
+			// this->_year = year
+		this->_year = year;
+		this ->_month = month;
+		this ->_day = day;
+		
+	}
+	void print()
+	{
 		cout << _year << "-" << _month << "-" << _day << endl;
 	}
-
 private:
 	int _year;
 	int _month;
 	int _day;
 };
 
+int main()
+{
+	Date1 d1;
+	Date1	d2;
+	// d1.Init(&d1, 2024, 3, 31);
+	d1.Init(2026, 10, 27);
+	d2.Init(2026, 10, 26);
+
+	d1.print();
+	d2.print();
+
+
+}
 
 
 
 
+class ExampleA
+{
+public:
+	void Print()
+	{
+		cout << "A::Print()" << endl;
+	}
+private:
+	int _a;
+};
+
+int main22()
+{
+	ExampleA* p = nullptr;
+	p->Print();//ExampleA能运行
+	return 0;
+}
+
+
+class ExampleB
+{
+public:
+void Print()
+{
+cout << "A::Print()" << endl;
+cout << _a << endl;
+}
+private:
+int _a;
+};
+int main23()
+{
+	ExampleB* p = nullptr;
+	p->Print();//ExampleB却不能运行
+	return 0;
+}
 
 
 /*
@@ -106,6 +183,8 @@ int main2()
 	B.print();
 	Date B1;//用无参构造函数时不能加(),不然会识别成 函数
 	B1.print();
+
+	return 0;
 }
 /*
 析构函数
