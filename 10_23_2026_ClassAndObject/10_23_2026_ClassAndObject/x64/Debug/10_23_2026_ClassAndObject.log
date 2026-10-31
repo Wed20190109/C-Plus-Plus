@@ -2,7 +2,9 @@
 C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\10_23_2026_ClassAndObject\Notes.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\10_23_2026_ClassAndObject\Notes.cpp(33,1): warning C4010: 单行注释包含行继续符
 C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\10_23_2026_ClassAndObject\Notes.cpp(37,8): warning C4101: “A”: 未引用的局部变量
-C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\10_23_2026_ClassAndObject\Notes.cpp(182,7): warning C4101: “year”: 未引用的局部变量
-C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\10_23_2026_ClassAndObject\Notes.cpp(184,7): warning C4101: “day”: 未引用的局部变量
-C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\10_23_2026_ClassAndObject\Notes.cpp(183,7): warning C4101: “month”: 未引用的局部变量
+C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\10_23_2026_ClassAndObject\Notes.cpp(172,1): warning C4010: 单行注释包含行继续符
+C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\10_23_2026_ClassAndObject\Notes.cpp(206,7): warning C4101: “year”: 未引用的局部变量
+C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\10_23_2026_ClassAndObject\Notes.cpp(208,7): warning C4101: “day”: 未引用的局部变量
+C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\10_23_2026_ClassAndObject\Notes.cpp(207,7): warning C4101: “month”: 未引用的局部变量
+C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\10_23_2026_ClassAndObject\Notes.cpp(373,20): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   10_23_2026_ClassAndObject.vcxproj -> C:\Codes\C-Plus-Plus\10_23_2026_ClassAndObject\x64\Debug\10_23_2026_ClassAndObject.exe

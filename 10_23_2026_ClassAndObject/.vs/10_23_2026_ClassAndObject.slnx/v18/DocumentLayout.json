@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{58628D9B-14C1-4349-AD8F-630FBF278637}|10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject.vcxproj|C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Date.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58628D9B-14C1-4349-AD8F-630FBF278637}|10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject.vcxproj|solutionrelative:10_23_2026_ClassAndObject\\Date.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{58628D9B-14C1-4349-AD8F-630FBF278637}|10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject.vcxproj|C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Notes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{58628D9B-14C1-4349-AD8F-630FBF278637}|10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject.vcxproj|solutionrelative:10_23_2026_ClassAndObject\\Notes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58628D9B-14C1-4349-AD8F-630FBF278637}|10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject.vcxproj|C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Date.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58628D9B-14C1-4349-AD8F-630FBF278637}|10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject.vcxproj|solutionrelative:10_23_2026_ClassAndObject\\Date.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Date.cpp",
+              "DocumentMoniker": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Date.cpp",
+              "RelativeDocumentMoniker": "10_23_2026_ClassAndObject\\Date.cpp",
+              "ToolTip": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Date.cpp",
+              "RelativeToolTip": "10_23_2026_ClassAndObject\\Date.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-10-31T14:25:09.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Date.h",
+              "DocumentMoniker": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Date.h",
+              "RelativeDocumentMoniker": "10_23_2026_ClassAndObject\\Date.h",
+              "ToolTip": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Date.h",
+              "RelativeToolTip": "10_23_2026_ClassAndObject\\Date.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-31T14:24:58.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Notes.cpp",
               "DocumentMoniker": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Notes.cpp",
               "RelativeDocumentMoniker": "10_23_2026_ClassAndObject\\Notes.cpp",
               "ToolTip": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Notes.cpp",
               "RelativeToolTip": "10_23_2026_ClassAndObject\\Notes.cpp",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAkwNcAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAEQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-26T13:19:06.693Z",
               "EditorCaption": ""
