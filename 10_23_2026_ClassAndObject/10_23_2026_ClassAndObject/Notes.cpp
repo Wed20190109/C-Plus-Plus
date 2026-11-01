@@ -298,7 +298,7 @@ Date2& func2()
 	return tmp;//传引用返回
 }
 
-int main()
+int main5()
 {
 	Date2 a(2026, 10, 31);
 	Date2 b(a);// C++规定⾃定义类型对象进⾏拷⻉⾏为必须调⽤拷⻉构造，所以这⾥传值传参要调⽤拷贝构造
