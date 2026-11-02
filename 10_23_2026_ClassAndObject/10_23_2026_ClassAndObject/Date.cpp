@@ -27,20 +27,26 @@ Date Date::operator+=(int day)//+=版，自身会改变
 }
 Date Date::operator-=(int day)
 {
-	_day -= day;
-	while (_day < GetAMonthDays(_year, _month))
+	
+	while (day>0)
 	{
-		_day += GetAMonthDays(_year, _month);
-		_month--;
-		if (_month == 0)
+		if (_day > day)
 		{
-			_month = 12;
-			_year--;
+			_day -= day;
+			day = 0;
+			
 		}
-		if (_day > GetAMonthDays(_year, _month))
+		else//_day<day
 		{
-			_day -= GetAMonthDays(_year, _month);
-			_month++;
+			day -= _day;
+			_month--;
+			if (_month == 0)
+			{
+				_month = 12;
+				_year--;
+
+			}
+			_day = GetAMonthDays(_year, _month);
 		}
 	}
 	
@@ -111,53 +117,80 @@ Date Date::operator+(int day)
 	}
 	return tmp;
 }
-
 Date Date::operator-(int day)
 {
-	Date  tmp = *this;
-	if (day < tmp._day)
+	Date tmp = *this;
+	
+	while (day > 0)
 	{
-		day -= tmp._day;
-		day = -day;
-		tmp._day = day;
-
-		return *this;
-
-	}
-	else if (day == tmp._day)
-	{
-		tmp._month--;
-		if (tmp._month == 0)
+		if (tmp._day > day)
 		{
-			tmp._year--;
-			tmp._month = 12;
+			tmp._day -= day;
+			day = 0;
+
 		}
-		tmp._day = GetAMonthDays(tmp._year, tmp._month);
-	}
-	else
-	{
-		while (day > GetAMonthDays(tmp._year, tmp._month))
+		else
 		{
-			day -= GetAMonthDays(tmp._year, tmp._month);
+			day -= tmp._day;
 			tmp._month--;
-
-			if (day -= GetAMonthDays(tmp._year, tmp._month) == 0)
-			{
-				tmp._month--;
-				tmp._day = GetAMonthDays(tmp._year, tmp._month);
-			}
 			if (tmp._month == 0)
 			{
 				tmp._month = 12;
 				tmp._year--;
-			}
 
+			}
+			tmp._day = GetAMonthDays(tmp._year, tmp. _month);
 		}
 	}
 
-
 	return tmp;
 }
+//Date Date::operator-(int day)
+//{
+//	Date  tmp = *this;
+//	if (day < tmp._day)
+//	{
+//		day -= tmp._day;
+//		day = -day;
+//		tmp._day = day;
+//
+//		return *this;
+//
+//	}
+//	else if (day == tmp._day)
+//	{
+//		tmp._month--;
+//		if (tmp._month == 0)
+//		{
+//			tmp._year--;
+//			tmp._month = 12;
+//		}
+//		tmp._day = GetAMonthDays(tmp._year, tmp._month);
+//	}
+//	else
+//	{
+//		while (day > GetAMonthDays(tmp._year, tmp._month))
+//		{
+//			day -= GetAMonthDays(tmp._year, tmp._month);
+//			tmp._month--;
+//
+//			if (day -= GetAMonthDays(tmp._year, tmp._month) == 0)
+//			{
+//				tmp._month--;
+//				tmp._day = GetAMonthDays(tmp._year, tmp._month);
+//			}
+//			if (tmp._month == 0)
+//			{
+//				tmp._month = 12;
+//				tmp._year--;
+//			}
+//
+//		}
+//	}
+//
+//
+//	return tmp;
+//}
 
 
 int main()
@@ -174,7 +207,7 @@ int main()
 
 	cout << "operator-= Test" << endl;
 	Date Today3(2026, 11, 1);
-	Today3 -= 555;
+	Today3 -= 100;
 	Today3.print();
 
 	cout << "operator- Test" << endl;
