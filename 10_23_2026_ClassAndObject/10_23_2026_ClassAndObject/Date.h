@@ -5,7 +5,7 @@ using namespace std;
 
 
 
-class Date 
+class Date  
 {
 
 public:
