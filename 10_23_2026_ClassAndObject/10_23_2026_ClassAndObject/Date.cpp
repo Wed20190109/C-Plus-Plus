@@ -117,80 +117,84 @@ Date Date::operator+(int day)
 	}
 	return tmp;
 }
-Date Date::operator-(int day)
-{
-	Date tmp = *this;
-	
-	while (day > 0)
-	{
-		if (tmp._day > day)
-		{
-			tmp._day -= day;
-			day = 0;
-
-		}
-		else
-		{
-			day -= tmp._day;
-			tmp._month--;
-			if (tmp._month == 0)
-			{
-				tmp._month = 12;
-				tmp._year--;
-
-			}
-			tmp._day = GetAMonthDays(tmp._year, tmp. _month);
-		}
-	}
-
-	return tmp;
-}
 //Date Date::operator-(int day)
 //{
-//	Date  tmp = *this;
-//	if (day < tmp._day)
+//	Date tmp = *this;
+//	
+//	while (day > 0)
 //	{
-//		day -= tmp._day;
-//		day = -day;
-//		tmp._day = day;
-//
-//		return *this;
-//
-//	}
-//	else if (day == tmp._day)
-//	{
-//		tmp._month--;
-//		if (tmp._month == 0)
+//		if (tmp._day > day)
 //		{
-//			tmp._year--;
-//			tmp._month = 12;
+//			tmp._day -= day;
+//			day = 0;
+//
 //		}
-//		tmp._day = GetAMonthDays(tmp._year, tmp._month);
-//	}
-//	else
-//	{
-//		while (day > GetAMonthDays(tmp._year, tmp._month))
+//		else
 //		{
-//			day -= GetAMonthDays(tmp._year, tmp._month);
+//			day -= tmp._day;
 //			tmp._month--;
-//
-//			if (day -= GetAMonthDays(tmp._year, tmp._month) == 0)
-//			{
-//				tmp._month--;
-//				tmp._day = GetAMonthDays(tmp._year, tmp._month);
-//			}
 //			if (tmp._month == 0)
 //			{
 //				tmp._month = 12;
 //				tmp._year--;
-//			}
 //
+//			}
+//			tmp._day = GetAMonthDays(tmp._year, tmp. _month);
 //		}
 //	}
 //
-//
 //	return tmp;
 //}
+
+Date Date::operator-(int day)//这里不写完整的 while (tmp._day > GetAMonthDays(tmp._year, tmp._month)) 的话是因为重载复用
+{
+Date tmp = *this;
+tmp -= day;//这里的 "-=" 是Date Date::operator-=(int day)的-=复用
+return tmp;
+
+}
+
+bool Date::operator<(const Date &day)
+{
+
+	if (_year != day._year)
+	{
+		return _year < day._year;
+	}
+	if (_month != day._month)
+	{
+		return _month < day._month;
+	}
+	return _day < day._day;
+	
+}
+
+bool Date::operator==(const Date& day)
+{
+	return (_year == day._year &&
+		_month == day._month &&
+		_day == day._day);
+}
+bool Date::operator<=(const Date& day)
+{
+	return (*this < day) || (*this == day);
+}
+
+bool Date::operator>(const Date& day)
+{
+	return !(*this == day) && !(*this< day);
+}
+
+bool Date::operator>=(const Date& day)
+{
+	return (*this > day) || (*this == day);
+}
+
+
+bool Date::operator!=(const Date& day)
+{
+	return !(*this == day);
+}
 
 
 int main()
@@ -214,5 +218,10 @@ int main()
 	Date Today4(2026, 11, 1);
 	Date d = Today4-100;
 	d.print();
+
+	cout << "operator< Test" << endl;
+	Date Today5(2026, 11, 9);
+	Date Today51(2026, 11, 10);
+	cout << (Today51 == Today5) << endl;
 
 }
