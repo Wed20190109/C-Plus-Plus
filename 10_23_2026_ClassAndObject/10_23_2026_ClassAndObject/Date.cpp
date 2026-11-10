@@ -175,6 +175,7 @@ bool Date::operator==(const Date& day)
 		_month == day._month &&
 		_day == day._day);
 }
+
 bool Date::operator<=(const Date& day)
 {
 	return (*this < day) || (*this == day);
@@ -196,7 +197,18 @@ bool Date::operator!=(const Date& day)
 	return !(*this == day);
 }
 
+Date Date::operator++(int)
+{
+	Date tmp = *this;
+	*this += 1;
+	return tmp;
+}
 
+Date Date::operator++()
+{
+	*this += 1;
+	return *this;
+}
 int main()
 {
 	cout << "operator+= Test" << endl;

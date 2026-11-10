@@ -32,8 +32,17 @@ public:
 	Date operator-(int day);
 	Date operator-=(int day);
 
-	int operator-(const Date& day);
+	int operator-(const Date& day);//两个日期间隔
 
+	/*
+	++,--也能重载,分左右（二元规定左边是第一个参数）
+	后置版需要在结尾
+	
+	*/
+
+	Date operator++(int);//可不加形参名因为不接受
+	Date operator++() ;
+	//后置++--应复用前置++--,因为后置++--创建了临时变量。前置复用后置会有两次创建临时变量(前置一次后置一次)，后置复用前置只有一次创建
 	int GetAMonthDays(int year,int month)//判断天数增加时该月的天数上限，月进位后会动态变化
 	{
 

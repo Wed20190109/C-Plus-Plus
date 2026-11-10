@@ -22,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Date.h",
-              "DocumentMoniker": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Date.h",
-              "RelativeDocumentMoniker": "10_23_2026_ClassAndObject\\Date.h",
-              "ToolTip": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Date.h",
-              "RelativeToolTip": "10_23_2026_ClassAndObject\\Date.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-31T14:24:58.583Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -45,9 +32,22 @@
               "RelativeDocumentMoniker": "10_23_2026_ClassAndObject\\Date.cpp",
               "ToolTip": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Date.cpp",
               "RelativeToolTip": "10_23_2026_ClassAndObject\\Date.cpp",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAYwN4AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAYwMwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-31T14:25:09.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Date.h",
+              "DocumentMoniker": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Date.h",
+              "RelativeDocumentMoniker": "10_23_2026_ClassAndObject\\Date.h",
+              "ToolTip": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Date.h",
+              "RelativeToolTip": "10_23_2026_ClassAndObject\\Date.h",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-31T14:24:58.583Z",
               "EditorCaption": ""
             },
             {
@@ -58,7 +58,7 @@
               "RelativeDocumentMoniker": "10_23_2026_ClassAndObject\\Notes.cpp",
               "ToolTip": "C:\\Codes\\C-Plus-Plus\\10_23_2026_ClassAndObject\\10_23_2026_ClassAndObject\\Notes.cpp",
               "RelativeToolTip": "10_23_2026_ClassAndObject\\Notes.cpp",
-              "ViewState": "AgIAAE0BAAAAAAAAAAAAACYBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAALQBAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-26T13:19:06.693Z",
               "EditorCaption": ""
