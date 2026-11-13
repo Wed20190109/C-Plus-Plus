@@ -8,7 +8,11 @@ using namespace std;
 class Date  
 {
 
+	friend ostream& operator<<(ostream& out, const Date& d);
+	friend istream& operator>>(istream& out, Date& d);
+
 public:
+	bool CheckDay();
 	void print()
 	{
 		cout << _year << "-" << _month << "-" << _day << endl;

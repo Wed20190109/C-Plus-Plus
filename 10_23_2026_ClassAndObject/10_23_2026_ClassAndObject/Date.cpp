@@ -117,6 +117,7 @@ Date Date::operator+(int day)
 	}
 	return tmp;
 }
+
 //Date Date::operator-(int day)
 //{
 //	Date tmp = *this;
@@ -208,6 +209,31 @@ Date Date::operator++()
 {
 	*this += 1;
 	return *this;
+}
+
+ostream& operator<<(ostream& out, const Date& d)
+{
+	out << d._year << "年" << d._month << "月" << d._day << "日" << endl;
+	return out;
+}
+
+istream& operator>>(istream& in, Date& d)
+{
+	cout << "请输入年月日";
+	in >> d._year >> d._month >> d._day;
+	if(d.CheckDay())
+	return in;
+}
+
+bool Date::CheckDay()
+{
+	if (_month < 1 || _month>12 || _day<1 || _day>GetAMonthDays(_year, _month))
+	{
+		return false;
+	}
+	else {
+		return true;
+	}
 }
 int main()
 {
